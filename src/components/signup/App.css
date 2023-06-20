@@ -1,0 +1,234 @@
+.flex-divider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+/* home- left side */
+
+.left-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000000;
+  width: 558px;
+}
+
+.board-text {
+  width: 246px;
+  height: 88px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ffffff;
+}
+
+/* rightside signin */
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 852px;
+  background-color: #f5f5f5;
+  /* border: 2px solid red; */
+}
+.sign-in-box {
+  margin: 3rem auto;
+  height: auto;
+  width: 385px;
+}
+.sign-in-text {
+  width: 100%;
+  /* height: 44px; */
+  left: 832px;
+  top: 260px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin: 1px;
+  margin-bottom: 6px;
+}
+.sign-in-message {
+  width: 100%;
+  /* height: 19px; */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 1px;
+  margin-bottom: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.button-google,
+.button-apple {
+  width: 46%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  color: #858585;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0.5rem;
+}
+
+.button-google:hover,
+.button-apple:hover {
+  background-color: rgb(28, 43, 36);
+}
+.image {
+  width: 18.15px;
+  height: auto;
+  margin-right: 0.3rem;
+}
+.form-box {
+  /* width: 100%; */
+  height: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.input-text {
+  width: 100%;
+  height: 19px;
+  left: 862px;
+  top: 439px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0.5rem;
+}
+input {
+  margin: 0.5rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  height: 40px;
+}
+.form-box a {
+  text-decoration: none;
+  margin: 0.7rem;
+  color: #346bd4;
+}
+.submit-btn {
+  width: 100%;
+  height: 40px;
+  background: #000000;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  margin-left: 0.5rem;
+}
+.submit-btn:hover {
+  background-color: green;
+}
+.bottom-text {
+  margin-left: 3.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-msg {
+  text-align: center;
+  color: #858585;
+}
+.bottom-msg a {
+  text-decoration: none;
+  color: #346bd4;
+  margin-left: 0.2rem;
+}
+@media screen and (max-width: 1440px) {
+  .flex-divider {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  .flex-divider {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-board {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+  }
+  .sign-in {
+    width: 100%;
+  }
+  /* .sign-in-box {
+    width: 100%;
+  } */
+}
+@media screen and (max-width: 375px) {
+  .flex-divider {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-board {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+  }
+  .sign-in {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+  .button-box {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .button-google,
+  .button-apple {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  .form-box {
+    margin: 1rem;
+    padding: 2rem;
+  }
+
+  .sign-in-box {
+    width: 100%;
+  }
+  .sign-in-text {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .sign-in-message {
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  .submit-btn {
+    width: 100%;
+    height: 40px;
+    background: #000000;
+    border-radius: 10px;
+    color: white;
+  }
+}
