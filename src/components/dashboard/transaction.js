@@ -6,23 +6,25 @@ import img1 from "../../images/VectorsRevenue.png";
 import img2 from "../../images/Vectortransaction.png";
 import img3 from "../../images/Vectorlike.png";
 import img4 from "../../images/Vectorusers.png";
-
+import arrow from "../../images/Vectorarrow.png";
 import profile from "../../images/profile.jpg";
-const RightSection = () => {
+import ActivitiesChart from "./charts/ActivitiesChart";
+
+const Transaction = () => {
   return (
     <div className="right-section">
       <div className="right-navbar">
         <h1 className="dashboard-text">Dashboard</h1>
 
         <div className="navbar-right-part">
-          <div class="search-box">
+          <div className="search-box">
             <input
-              class="search-input"
+              className="search-input"
               type="text"
               placeholder="Search.."
             ></input>
 
-            <button class="search-btn">
+            <button className="search-btn">
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </div>
@@ -34,50 +36,43 @@ const RightSection = () => {
 
       <div className="userData">
         <div className="box box1">
-          <img src={img1}></img>
+          <div className="image">
+            <img src={img1}></img>
+          </div>
 
           <p> Total Revenues</p>
           <h2>$2,129,430</h2>
         </div>
         <div className="box box2">
-          <img src={img2}></img>
+          <div className="image">
+            <img src={img2}></img>
+          </div>
 
           <p> Total Transactions</p>
-          <h2>$2,129,430</h2>
+          <h2>1,520</h2>
         </div>
         <div className="box box3">
-          <img src={img3}></img>
+          <div className="image">
+            <img src={img3}></img>
+          </div>
 
           <p> Total Likes</p>
-          <h2>$2,129,430</h2>
+          <h2>9,721</h2>
         </div>
         <div className="box box4">
-          <img src={img4}></img>
+          <div className="image">
+            <img src={img4}></img>
+          </div>
 
           <p> Total Users</p>
-          <h2>$2,129,430</h2>
+          <h2>892</h2>
         </div>
       </div>
 
-      <div className="chart"></div>
-
-      <div className="bottom-section">
-        <div className="top-products">
-          <div className="top-products-top">
-            <div>Top Products</div>
-            <select>
-              <option>May-June 2021</option>
-            </select>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div className="top-products"></div>
-      </div>
+      <ActivitiesChart />
+      {/* <TestChart /> */}
     </div>
   );
 };
 
-export default RightSection;
+export default Transaction;

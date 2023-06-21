@@ -1,0 +1,145 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  height: 359px;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  padding-left: 2.1rem;
+  position: relative;
+}
+
+.activites-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  position: absolute;
+}
+.activites-card h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.activites-card select {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #858585;
+}
+.right {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.line-chart {
+  overflow: scroll;
+  margin-left: 0px;
+  margin-top: 40px;
+  padding: 10px 0px 20px 0px;
+}
+.custom-legend {
+  display: flex;
+  float: right;
+  position: absolute;
+  right: 7px;
+  top: -20px;
+}
+.cirle-text-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+.cirle-text-box .textUsers {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #9bdd7c;
+}
+
+.circle2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+
+  background-color: #e9a0a0;
+}
+.activites-chart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  height: 759px;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 4.5rem;
+  /* padding-bottom: 1.1rem; */
+  position: relative;
+}
+/* PIE CHART */
+.pie-chart {
+  width: 100%;
+}
+/* piechart's */
+.recharts-wrapper {
+  width: 100% !important;
+  /* height: auto; */
+}
+.recharts-layer recharts-pie {
+}
+.recharts-legend-wrapper {
+  /* top: 46px; */
+}
+.custom-pie {
+  display: flex;
+  /* float: right; */
+  position: relative;
+
+  top: -68px;
+  left: -4px;
+}
+.cirle-text-box-pie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+.cirle-text-box .textUsers-pie {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.circle1-pie {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #9bdd7c;
+}
+
+.circle2-pie {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+
+  background-color: #e9a0a0;
+}

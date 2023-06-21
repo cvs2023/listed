@@ -147,6 +147,7 @@ input {
   background-color: green;
 }
 .bottom-text {
+  margin-top: 1rem;
   margin-left: 3.5rem;
   display: flex;
   flex-direction: row;
@@ -177,6 +178,8 @@ input {
   }
   .sign-in {
     width: 100%;
+    /* height: 100vh; */
+    margin-bottom: 3rem;
   }
   /* .sign-in-box {
     width: 100%;

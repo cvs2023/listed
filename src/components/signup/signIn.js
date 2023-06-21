@@ -41,10 +41,10 @@ const SignIn = () => {
         </div>
         <form className="form-box">
           <label className="input-text">Email address</label>
-          <input type="email" value="" />
+          <input type="email" />
 
           <label className="input-text">Password</label>
-          <input type="password" value="" />
+          <input type="password" />
 
           <a href="#">Forgot Password?</a>
           <button className="submit-btn" type="submit">
