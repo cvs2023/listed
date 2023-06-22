@@ -8,18 +8,14 @@ const data = [
   { name: "Category 4", value: 100 },
 ];
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["#9bdd7c", "#f6dc7d", "#e9a0a0", "#FF8042"];
 
 function App() {
   return (
     <div className="pie-chart">
-      <PieChart
-        width={250}
-        height={164}
-        //sResponsive={false}>
-      >
+      <PieChart width={150} height={164}>
         <Pie
-          cx={300 / 4}
+          cx={60}
           data={data}
           startAngle={0}
           nameKey="name"
@@ -35,26 +31,38 @@ function App() {
         </Pie>
         <Tooltip />
         <Legend
+          width={280}
+          height={100}
+          cx={60}
+          verticalAlign="middle"
           align="right"
           layout="horizontal"
-          iconType="circle"
+          // iconType="circle"
           iconSize={10}
-          payload={[
-            { value: "Guest", type: "monotone" },
-            // { value: "User", type: "monotone" },
-          ]}
           content={() => {
             return (
               <ul className="custom-pie">
                 <div className="right-pie">
                   <div className="cirle-text-box-pie">
                     <div className="circle1-pie"></div>
-                    <div className="textUsers-pie">USA</div>
+                    <div className="textUsers-pie">Basic Trees</div>
+                    <div className="percent1">400</div>
                   </div>
 
                   <div className="cirle-text-box-pie">
                     <div className="circle2-pie"></div>
-                    <div className="textUsers-pie">User</div>
+                    <div className="textUsers-pie">Custom Short Pants</div>
+                    <div className="percent1">300</div>
+                  </div>
+                  <div className="cirle-text-box-pie">
+                    <div className="circle3-pie"></div>
+                    <div className="textUsers-pie">Super Hoodies</div>
+                    <div className="percent1">200</div>
+                  </div>
+                  <div className="cirle-text-box-pie">
+                    <div className="circle4-pie"></div>
+                    <div className="textUsers-pie">T-Shirts</div>
+                    <div className="percent1">100</div>
                   </div>
                 </div>
               </ul>

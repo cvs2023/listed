@@ -4,12 +4,10 @@
   margin-top: 2rem;
   height: 359px;
   width: 100%;
-  border: 1px solid red;
   border-radius: 20px;
   background-color: #ffffff;
   padding: 1.5rem;
   padding-left: 2.1rem;
-  position: relative;
 }
 
 .activites-card {
@@ -43,14 +41,14 @@
   overflow: scroll;
   margin-left: 0px;
   margin-top: 40px;
-  padding: 10px 0px 20px 0px;
+  padding: 10px 2px 20px 0px;
 }
 .custom-legend {
   display: flex;
   float: right;
   position: absolute;
-  right: 7px;
-  top: -20px;
+  right: 89px;
+  top: -46px;
 }
 .cirle-text-box {
   display: flex;
@@ -96,30 +94,40 @@
 /* PIE CHART */
 .pie-chart {
   width: 100%;
+  position: relative;
 }
 /* piechart's */
 .recharts-wrapper {
+  float: left !important;
+
   width: 100% !important;
+}
+.recharts-wrapper svg {
   /* height: auto; */
+  /* position: absolute; */
+  /* float: left !important; */
 }
 .recharts-layer recharts-pie {
 }
 .recharts-legend-wrapper {
-  /* top: 46px; */
+  position: absolute !important;
+  right: -70px !important;
+  top: 32px !important;
 }
 .custom-pie {
   display: flex;
-  /* float: right; */
-  position: relative;
-
-  top: -68px;
-  left: -4px;
+  flex-direction: column;
+}
+.right-pie {
+  /* display: flex;
+  flex-direction: column; */
 }
 .cirle-text-box-pie {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 .cirle-text-box .textUsers-pie {
   font-family: "Lato";
@@ -134,12 +142,75 @@
   margin-right: 1rem;
   background-color: #9bdd7c;
 }
+.textUsers-pie {
+  color: #000;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+.percent1 {
+  color: var(--secondary-text, #858585);
+  font-size: 12px;
+  font-family: Lato;
+}
 
 .circle2-pie {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin-right: 1rem;
+  background: #f6dc7d;
+}
+.circle3-pie {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
 
   background-color: #e9a0a0;
+}
+.circle4-pie {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #ff8042;
+}
+
+@media screen and (max-width: 991px) {
+  .line-chart {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pie-chart {
+    height: 300px;
+  }
+  .recharts-wrapper {
+    /* position: relative !important; */
+    /* display: flex !important;
+    flex-direction: column !important; */
+  }
+  .recharts-wrapper svg {
+    width: 100% !important;
+    /* height: auto; */
+    /* position: absolute; */
+    /* float: left !important; */
+  }
+
+  .recharts-legend-wrapper {
+    position: absolute !important;
+    right: 0px !important;
+    top: 200px !important;
+  }
+  .custom-pie {
+    /* position: absolute; */
+    /* bottom: 0px; */
+  }
+}
+@media screen and (max-width: 376px) {
+  .custom-pie {
+    margin-left: 3rem;
+  }
 }

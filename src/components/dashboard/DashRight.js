@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -11,12 +11,40 @@ import profile from "../../images/profile.jpg";
 import LineChart from "./charts/LineChart";
 import App from "./charts/PieChart";
 // import TestChart from "./charts/testChart";
+const userData = [
+  {
+    id: 1,
+    img: img1,
+    title: " Total Revenues",
+    num: "$2,129,430",
+  },
+  {
+    id: 2,
+    img: img2,
 
+    title: "Total Transactions",
+    num: "1,520",
+  },
+  {
+    id: 3,
+    img: img3,
+
+    title: "Total Likes",
+    num: "9,721",
+  },
+  {
+    id: 4,
+    img: img4,
+    title: "Total Users",
+    num: "892",
+  },
+];
 const DashRight = () => {
+  const [data, setdata] = useState(userData);
   return (
     <div className="right-section">
       <div className="right-navbar">
-        <h1 className="dashboard-text">Dashboard</h1>
+        <h1 className="dashboard-text dash-hide">Dashboard</h1>
 
         <div className="navbar-right-part">
           <div className="search-box">

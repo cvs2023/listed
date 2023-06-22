@@ -5,9 +5,9 @@ import Hamburger from "./hamburger";
 const TransRight = () => {
   return (
     <div className="dashboard">
-      <SideBar />
+      {/* <SideBar />
       <Hamburger />
-      <Transaction />
+      <Transaction /> */}
     </div>
   );
 };

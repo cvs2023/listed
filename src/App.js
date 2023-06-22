@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/transactions" element={<TransRight />} />
+          <Route path="/transactions" element={<Dashboard />} />
           <Route path="/schedules" element={<Dashboard />} />
           <Route path="/users" element={<Dashboard />} />
           <Route path="/settings" element={<Dashboard />} />

@@ -4,10 +4,15 @@ import DashRight from "./DashRight";
 import Hamburger from "./hamburger";
 const Dashboard = () => {
   return (
-    <div className="dashboard">
-      <Sidebar />
-      <Hamburger />
-      <DashRight />
+    <div>
+      <div>
+        <Hamburger />
+      </div>
+      <div className="dashboard">
+        <Sidebar />
+
+        <DashRight />
+      </div>
     </div>
   );
 };

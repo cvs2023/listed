@@ -9,13 +9,16 @@ const App = () => {
 
   return (
     <div className="hamburger font-Poppins ">
-      <header className="bg-white">
-        <nav className="flex text-5xl justify-between items-center w-[92%]  mx-auto">
+      <header className="bg-white ">
+        <nav className="flex text-5xl justify-between items-center  w-[92%]  mx-auto">
           <div
-            className={`nav-links   ${show === true ? "" : "top-[9%]"}
-            duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center px-5`}
+            className={`nav-links z-[20] justify-center   ${
+              show === true ? "" : "top-[6%]"
+            }
+            
+            duration-500 xl:static absolute bg-black text-white  xl:min-h-fit min-h-[60vh] left-0 top-[-100%] xl:w-auto  w-full flex items-center px-5`}
           >
-            <ul className="flex lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
+            <ul className="flex flex-col hamburger-text  xl:gap-[4vw] gap-8">
               <Link className="hover:text-gray-500" to="/dashboard">
                 Dashbaord
               </Link>
@@ -30,6 +33,12 @@ const App = () => {
               </Link>
               <Link className="hover:text-gray-500" to="/settings">
                 Settings
+              </Link>
+              <Link className="hover:text-gray-500" to="/settings">
+                Help
+              </Link>
+              <Link className="hover:text-gray-500" to="/settings">
+                Contact
               </Link>
             </ul>
           </div>
