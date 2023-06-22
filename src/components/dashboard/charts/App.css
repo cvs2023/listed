@@ -38,7 +38,7 @@
   align-items: center;
 }
 .line-chart {
-  overflow: scroll;
+  overflow: auto;
   margin-left: 0px;
   margin-top: 40px;
   padding: 10px 2px 20px 0px;
@@ -88,27 +88,18 @@
   border-radius: 20px;
   background-color: #ffffff;
   padding: 4.5rem;
-  /* padding-bottom: 1.1rem; */
   position: relative;
 }
-/* PIE CHART */
 .pie-chart {
   width: 100%;
   position: relative;
 }
-/* piechart's */
 .recharts-wrapper {
   float: left !important;
 
   width: 100% !important;
 }
-.recharts-wrapper svg {
-  /* height: auto; */
-  /* position: absolute; */
-  /* float: left !important; */
-}
-.recharts-layer recharts-pie {
-}
+
 .recharts-legend-wrapper {
   position: absolute !important;
   right: -70px !important;
@@ -118,10 +109,7 @@
   display: flex;
   flex-direction: column;
 }
-.right-pie {
-  /* display: flex;
-  flex-direction: column; */
-}
+
 .cirle-text-box-pie {
   display: flex;
   flex-direction: row;
@@ -187,26 +175,18 @@
   .pie-chart {
     height: 300px;
   }
-  .recharts-wrapper {
-    /* position: relative !important; */
-    /* display: flex !important;
-    flex-direction: column !important; */
+  .custom-legend {
+    right: 0px;
+    top: -200px;
   }
   .recharts-wrapper svg {
     width: 100% !important;
-    /* height: auto; */
-    /* position: absolute; */
-    /* float: left !important; */
   }
 
   .recharts-legend-wrapper {
     position: absolute !important;
     right: 0px !important;
     top: 200px !important;
-  }
-  .custom-pie {
-    /* position: absolute; */
-    /* bottom: 0px; */
   }
 }
 @media screen and (max-width: 420px) {
@@ -222,6 +202,6 @@
 }
 @media screen and (max-width: 376px) {
   .custom-pie {
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
 }

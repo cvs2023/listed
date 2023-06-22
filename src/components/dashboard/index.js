@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import DashRight from "./DashRight";
 import Hamburger from "./hamburger";
-const Dashboard = () => {
+const App = () => {
   return (
     <div>
       <div>
@@ -16,4 +16,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default App;

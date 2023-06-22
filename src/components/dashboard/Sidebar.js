@@ -19,28 +19,32 @@ const LeftSection = () => {
             Dashboard
           </Link>
 
-          <Link to="/transactions">
+          <Link className="pointer-events-none" to="/">
             <img src={transactions}></img>
             Transactions
           </Link>
 
-          <Link to="/schedules">
+          <Link className="pointer-events-none" to="/">
             <img src={schedules}></img>
             Schedules
           </Link>
-          <Link to="/users">
+          <Link className="pointer-events-none" to="/">
             <img src={users}></img>
             Users
           </Link>
-          <Link to="/settings">
+          <Link className="pointer-events-none" to="/">
             <img src={settings}></img>
             Settings
           </Link>
         </div>
 
         <div class className="bottom">
-          <Link to="/help">Help</Link>
-          <Link to="/contactUs">Conatct Us</Link>
+          <Link className="pointer-events-none" to="/">
+            Help
+          </Link>
+          <Link className="pointer-events-none" to="/">
+            Conatct Us
+          </Link>
         </div>
       </div>
     </div>

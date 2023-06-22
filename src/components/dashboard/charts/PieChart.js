@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { PieChart, Pie, Legend, Tooltip, Cell } from "recharts";
 
 const data = [
-  { name: "Category 1", value: 400 },
-  { name: "Category 2", value: 300 },
-  { name: "Category 3", value: 200 },
-  { name: "Category 4", value: 100 },
+  { name: "Basic Trees", value: 400 },
+  { name: "Custom Short Pants", value: 300 },
+  { name: "Super Hoodies", value: 200 },
+  { name: "T-Shirts", value: 100 },
 ];
 
 const COLORS = ["#9bdd7c", "#f6dc7d", "#e9a0a0", "#FF8042"];

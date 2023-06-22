@@ -2,29 +2,26 @@ import React, { useState, useEffect } from "react";
 import googleIcon from "../../images/google-icon.png";
 import appleIcon from "../../images/apple-icon.png";
 import { auth, provider } from "../../auth/firebase";
-import { signInWithPopup, getRedirectResult } from "firebase/auth";
-import Dashboard from "../dashboard/dashboard";
-import { Link } from "react-router-dom";
+import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-// import firebase from "firebase/app";
-
 const SignIn = () => {
-  // Sign in with google
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(null);
   const navigate = useNavigate();
 
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
-      setValue(data.user.email);
-      localStorage.setItem("email", data.user.email);
+      const token = auth.config.apiKey;
+
+      localStorage.setItem("token", token);
+      setValue(token);
 
       navigate("/dashboard");
     });
   };
 
   useEffect(() => {
-    setValue(localStorage.getItem("email"));
+    setValue(localStorage.getItem("token"));
     if (value) {
       navigate("/dashboard");
     }

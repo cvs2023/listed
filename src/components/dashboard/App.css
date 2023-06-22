@@ -14,7 +14,7 @@
 }
 
 .logo {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -40,7 +40,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   padding: 0.3rem;
   font-family: "Montserrat";
   font-style: normal;
@@ -286,10 +285,6 @@
   font-weight: 400;
   font-size: 12px;
 }
-.todays-schedule-in p {
-  /* font-family: "Montserrat";
-  font-weight: 400; */
-}
 .todays-schedule-in img {
   width: 5px;
   height: 8px;
@@ -342,8 +337,8 @@
   }
 
   .menu {
-    margin-top: 4rem;
-    height: 100vh;
+    margin-top: 3rem;
+    height: 88%;
     align-items: start;
   }
 
