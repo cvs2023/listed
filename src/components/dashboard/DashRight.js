@@ -11,36 +11,8 @@ import profile from "../../images/profile.jpg";
 import LineChart from "./charts/LineChart";
 import App from "./charts/PieChart";
 // import TestChart from "./charts/testChart";
-const userData = [
-  {
-    id: 1,
-    img: img1,
-    title: " Total Revenues",
-    num: "$2,129,430",
-  },
-  {
-    id: 2,
-    img: img2,
 
-    title: "Total Transactions",
-    num: "1,520",
-  },
-  {
-    id: 3,
-    img: img3,
-
-    title: "Total Likes",
-    num: "9,721",
-  },
-  {
-    id: 4,
-    img: img4,
-    title: "Total Users",
-    num: "892",
-  },
-];
 const DashRight = () => {
-  const [data, setdata] = useState(userData);
   return (
     <div className="right-section">
       <div className="right-navbar">
@@ -63,37 +35,32 @@ const DashRight = () => {
           <img className="right-profile-img" src={profile}></img>
         </div>
       </div>
-
       <div className="userData">
-        <div className="box box1">
+        <div className={` box box1`}>
           <div className="image">
             <img src={img1}></img>
           </div>
-
           <p> Total Revenues</p>
           <h2>$2,129,430</h2>
         </div>
-        <div className="box box2">
+        <div className={` box box2`}>
           <div className="image">
             <img src={img2}></img>
           </div>
-
           <p> Total Transactions</p>
           <h2>1,520</h2>
         </div>
-        <div className="box box3">
+        <div className={` box box3`}>
           <div className="image">
             <img src={img3}></img>
           </div>
-
           <p> Total Likes</p>
           <h2>9,721</h2>
         </div>
-        <div className="box box4">
+        <div className={` box box4`}>
           <div className="image">
             <img src={img4}></img>
           </div>
-
           <p> Total Users</p>
           <h2>892</h2>
         </div>

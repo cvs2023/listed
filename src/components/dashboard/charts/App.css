@@ -209,6 +209,17 @@
     /* bottom: 0px; */
   }
 }
+@media screen and (max-width: 420px) {
+  .custom-pie {
+    margin-left: 3rem;
+  }
+  .activites-card h1 {
+    font-size: 13px;
+  }
+  .activites-card select {
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 376px) {
   .custom-pie {
     margin-left: 3rem;

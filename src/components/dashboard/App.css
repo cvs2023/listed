@@ -393,6 +393,7 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 376px) {
   .navbar-right-part {
     gap: 0.9rem;

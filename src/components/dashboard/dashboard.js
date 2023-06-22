@@ -10,7 +10,6 @@ const Dashboard = () => {
       </div>
       <div className="dashboard">
         <Sidebar />
-
         <DashRight />
       </div>
     </div>

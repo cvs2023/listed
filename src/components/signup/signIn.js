@@ -2,26 +2,31 @@ import React, { useState, useEffect } from "react";
 import googleIcon from "../../images/google-icon.png";
 import appleIcon from "../../images/apple-icon.png";
 import { auth, provider } from "../../auth/firebase";
-import { signInWithPopup } from "firebase/auth";
+import { signInWithPopup, getRedirectResult } from "firebase/auth";
 import Dashboard from "../dashboard/dashboard";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+// import firebase from "firebase/app";
+
 const SignIn = () => {
   // Sign in with google
   const [value, setValue] = useState("");
+  const navigate = useNavigate();
+
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
       setValue(data.user.email);
       localStorage.setItem("email", data.user.email);
+
+      navigate("/dashboard");
     });
-    console.log({ value });
   };
 
   useEffect(() => {
     setValue(localStorage.getItem("email"));
-    console.log(value);
     if (value) {
-      console.log("hiii");
-      window.location.href = "/dashboard";
+      navigate("/dashboard");
     }
   });
   return (
@@ -47,7 +52,7 @@ const SignIn = () => {
           <input type="password" />
 
           <a href="#">Forgot Password?</a>
-          <button className="submit-btn" type="submit">
+          <button className="submit-btn bg-black" type="submit">
             Sign In
           </button>
         </form>
