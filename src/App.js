@@ -3,10 +3,11 @@ import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
 import Home from "./components/signup/Home";
 import Dashboard from "./components/dashboard/index";
 import Error from "./Error";
-import { useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
+
 function App() {
   return (
-    <div className="App">
+    <HelmetProvider>
       <Main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -14,7 +15,7 @@ function App() {
           <Route exact path="/*" element={<Error />} />
         </Routes>
       </Main>
-    </div>
+    </HelmetProvider>
   );
 }
 

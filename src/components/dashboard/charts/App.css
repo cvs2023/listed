@@ -9,7 +9,9 @@
   padding: 1.5rem;
   padding-left: 2.1rem;
 }
-
+.chart select {
+  background-color: transparent;
+}
 .activites-card {
   display: flex;
   flex-direction: row;

@@ -256,6 +256,9 @@
   font-weight: 400;
   font-size: 12px;
 }
+.top-products-top > select {
+  background-color: transparent;
+}
 
 .todays-schedule-box {
   padding: 2.3rem;
